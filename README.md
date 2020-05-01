@@ -16,5 +16,4 @@ MicroSD | Up to 256 GB
 Battery | Li-Ion 3000mAh battery
 Display | 1080 x 1920 pixels, 5.2 inches (~424 ppi pixel density)
 Camera  | 16 MP, 4608 x 3456 pixels, laser focus, dual flash LED
-# Zenfone3_dt
-# Zenfone3_dt
+

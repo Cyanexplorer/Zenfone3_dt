@@ -1,0 +1,22 @@
+allow hal_keymaster_default vendor_tee_listener_prop:file {read open getattr};
+allow hal_gatekeeper_default vendor_tee_listener_prop:file {read open getattr};
+allow kernel factory_file:file read;
+allow kernel demoapp_file:dir search;
+
+allow init demoapp_file:dir {mounton};
+allow init log_file:dir {mounton};
+allow recovery_persist unlabeled:dir {search};
+allow ueventd demoapp_file:lnk_file {read};
+allow hal_sensors_default sysfs:file {read};
+allow hal_gnss_qti sysfs:file {read};
+allow tfa98xx debugfs_ipc:dir{search};
+allow hal_audio_default sysfs:dir{read};
+allow hal_audio_default log_file:dir{search};
+
+#permissive
+#allow rmt_storage vendor_file:file entrypoint;
+#allow init vendor_file:file execute_no_trans;
+#allow fsck block_device:blk_file {read write};
+
+
+
